@@ -27,7 +27,7 @@ cardano-cli conway query protocol-parameters \
 --out-file pparams.json
 ```
 
-### Step 2: Transfer Both Files to Cold Environment
+### Step 2: Transfer All Files to Cold Environment
 Transfer these three files to your cold environment to securely build the vote file, construct the transaction, and perform the signing process offline. 
 This minimizes exposure to potential online threats during the transaction.
 
