@@ -28,7 +28,7 @@ cardano-cli conway query protocol-parameters \
 ```
 
 ### Step 2: Transfer All Files to Cold Environment
-Transfer these three files to your cold environment to securely build the vote file, construct the transaction, and perform the signing process offline. 
+Transfer these three files(`gov-state.json`, `wallet-utxo.json`, `pparams.json`) to your cold environment to securely build the vote file, construct the transaction, and perform the signing process offline. 
 This minimizes exposure to potential online threats during the transaction.
 
 #### Locate the UpdateCommittee Proposal and Extract the Governance Action ID
