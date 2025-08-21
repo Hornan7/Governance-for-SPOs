@@ -59,9 +59,9 @@ By using available inputs to create a draft, we can then calculate the fee and a
 ```
 cardano-cli conway transaction build-raw \
 --tx-in <YOUR WALLET UTXO> \
---tx-out <YOUR WALLET ADDRESS>+00000000 \
+--tx-out <YOUR WALLET ADDRESS>+0 \
 --vote-file action.vote \
---fee 000000 \
+--fee 0 \
 --out-file tx.raw
 ```
 
@@ -94,6 +94,9 @@ cardano-cli conway transaction build-raw \
 --fee 171529 \
 --out-file tx.raw
 ```
+
+> **Warning**
+> If your transaction draft becomes larger in size after `calculating the fee` — for example, because the new output values added more bytes to the file — you must re-run the calculate-min-fee command to check whether the required fee has changed. If the fee has increased, update your output value accordingly and verify the transaction again. A larger transaction file requires a higher fee, so always double-check after making changes.
 
 ### Step 7: Sign the transaction
 Sign your transaction body file using both `cold.skey` and `payment.skey`
