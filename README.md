@@ -116,4 +116,7 @@ cardano-cli conway transaction submit \
 --mainnet \
 --tx-file tx.signed
 ```
-And voilà, congratulations! You’ve successfully cast your vote as a Stake Pool Operator in our awesome governance system
+And voilà — congratulations! You've successfully cast your vote as a Stake Pool Operator in our governance system. If everything went well, you should see an output like this:
+<img width="811" height="47" alt="image" src="https://github.com/user-attachments/assets/a616f407-55e8-45a8-920c-bed9f6765d67" />
+
+
