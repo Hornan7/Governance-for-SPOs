@@ -59,9 +59,9 @@ By using available inputs to create a draft, we can then calculate the fee and a
 ```
 cardano-cli conway transaction build-raw \
 --tx-in <YOUR WALLET UTXO> \
---tx-out <YOUR WALLET ADDRESS>+0 \
+--tx-out <YOUR WALLET ADDRESS>+00000000 \
 --vote-file action.vote \
---fee 0 \
+--fee 000000 \
 --out-file tx.raw
 ```
 
